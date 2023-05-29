@@ -32,10 +32,8 @@ router.get("/:id", async (req, res) => {
 router.post("/", async (req, res) => {
   try {
     let { name, surname, mail, rol } = req.body;
-    console.log(req.body);
     //crea un usuario nuevo 
     let userCreated = await createUser(name, surname, mail, rol);
-    console.log(userCreated,"averrrr")
     // creo un carrito vacio a ese usuario , la primera vez que se crea
     let cartCreated= await createCart(mail);
 
