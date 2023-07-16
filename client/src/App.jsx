@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './views/HomeView';
 import Details from './views/DetailsView';
@@ -27,12 +27,15 @@ import { firestore } from "./context/context"
 import ShoppingCart from './components/ShoppingCart/ShoppingCart'
 
 import Userview from './views/AdminView/Userview.jsx';
-
+import { useDispatch } from 'react-redux';
+import { loadDb } from './redux/actions/loadDb';
 
 function App() {
-
-  console.log("AuthProvider", AuthProvider)
-  console.log("firestore", firestore)
+  const dispatch=useDispatch()
+  
+  useEffect(() => {
+    dispatch(loadDb())
+  }, [])
   const [userlog, setUser] = React.useState(null);
 
   async function getRol(uid) {
