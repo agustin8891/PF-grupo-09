@@ -11,13 +11,12 @@ import {
 
 import { auth, app } from "../Firebase/firebase-config";
 import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
-const authContext = createContext();
+export const authContext = createContext();
 export const firestore = getFirestore(app);
+
 export const useAuth = () => {
   const context = useContext(authContext);
-  console.log(context);
   if (!context) throw new Error("There is no Auth provider");
-  return context;
 };
 
 export function AuthProvider({ children }) {
@@ -41,13 +40,13 @@ export function AuthProvider({ children }) {
       apellido: surname,
     });
   };
-  const getRol= async(uid) => {
+  const getRol = async (uid) => {
     // obtener rol
     const docuRef = doc(firestore, `usuarios/${uid}`);
     const docuCifrada = await getDoc(docuRef);
     const infoFinal = docuCifrada.data().rol;
     return infoFinal;
-  }
+  };
   async function getName(uid) {
     // obtener rol
     const docuRef = doc(firestore, `usuarios/${uid}`);
@@ -84,12 +83,15 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     const unsubuscribe = onAuthStateChanged(auth, (currentUser) => {
-      console.log({ currentUser });
+      console.log("currentuser", { currentUser });
       setUser(currentUser);
       setLoading(false);
     });
     return () => unsubuscribe();
   }, []);
+
+
+
 
   return (
     <authContext.Provider
@@ -107,3 +109,5 @@ export function AuthProvider({ children }) {
     </authContext.Provider>
   );
 }
+
+

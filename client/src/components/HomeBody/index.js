@@ -4,13 +4,14 @@ import "./homeBody.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getPackages } from "../../redux/actions/getPackages";
 import { getMainPackages } from "../../redux/actions/getMainPackages";
-
 import { getCities } from "../../redux/actions/getCities";
 import { loadCart } from "../../redux/actions/loadCart";
 import { getAuth } from "firebase/auth";
-
 import { getClean } from "../../redux/actions/getClean";
 import Loaderpag from "../Loaderpag/Loaderpag";
+
+
+
 export default function HomeBody() {
   const { packages, showPackages } = useSelector((state) => state.rootReducer);
   const dispatch = useDispatch();

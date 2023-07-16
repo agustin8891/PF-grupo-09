@@ -5,14 +5,17 @@ import { Alert } from "./Alert";
 import { useDispatch } from "react-redux";
 import { postUser } from "../../redux/actions/postUser";
 //import { loadCart } from "../../redux/actions/loadCart";
+import { useContext } from "react";
+import { authContext } from "../../context/context";
 
 //css
 import "../../views/LoginView/loginView.css";
 //logo
 import logo from "../../images/Buspack.png"; //imagen logo
 import { sendMail } from "../../redux/actions/sendMail";
+
 export function Register() {
-  const { signup } = useAuth();
+  const { signup } = useContext(authContext);
   const dispatch = useDispatch();
   let regexName = /^[A-Z][a-z]{3,10}$/;
 
@@ -49,8 +52,8 @@ export function Register() {
       );
     }
     try {
-      await signup(user.mail, user.password, user.rol, user.name, user.surname);
-
+     const response= await signup(user.mail, user.password, user.rol, user.name, user.surname);
+      console.log(response)
       let storage = JSON.parse(localStorage.getItem("myCartNotLoggedin"));
       //si el storage no tiene nada mando un arreglo vacio []
       storage = storage === null ? [] : storage;

@@ -30,6 +30,9 @@ import Userview from './views/AdminView/Userview.jsx';
 
 
 function App() {
+
+  console.log("AuthProvider", AuthProvider)
+  console.log("firestore", firestore)
   const [userlog, setUser] = React.useState(null);
 
   async function getRol(uid) {

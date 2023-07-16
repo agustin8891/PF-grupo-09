@@ -5,6 +5,7 @@ export const loadCart = (mail) => {
   return async function (dispatch) {
     try {
       let result = await axios.get(`${DB_HEROKU}/carts/${mail}`);
+      console.log("result", result)
       return dispatch({
         type: LOAD_CART,
         payload: result.data,

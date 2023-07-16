@@ -1,7 +1,10 @@
 import { POST_USER,DB_HEROKU } from "./actionTypes";
 import axios from "axios";
 
+
+
 export const postUser = (userDb) => {
+  console.log("userDB", userDb)
   const { mail, storage } = userDb;
   return async function (dispatch) {
     try {

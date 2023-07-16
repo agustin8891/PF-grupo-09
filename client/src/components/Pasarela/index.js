@@ -50,10 +50,10 @@ const CheckoutForm = ({ total, cart }) => {
       type: "card",
       card: elements.getElement(CardElement),
     });
-    setLoading(true);
 
+     console.log("error", error) 
     if (!error) {
-      console.log(paymentMethod);
+      console.log("paymentMethod", paymentMethod);
       const { id, card } = paymentMethod;
       try {
         let pay = {

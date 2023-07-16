@@ -13,6 +13,13 @@ import { app } from "../../Firebase/firebase-config";
 import {  doc, getDoc,getFirestore } from "firebase/firestore";
 import { deleteUser } from "firebase/auth";
 import { loadCartLogin } from "../../redux/actions/loadCartLogin";
+import { useContext } from "react";
+import { authContext } from "../../context/context";
+
+
+
+
+
 export function Login() {
   const dispatch = useDispatch();
   const [user, setUser] = useState({
@@ -21,10 +28,12 @@ export function Login() {
     rol: "",
   });
   const firestore = getFirestore(app);
-  const { login, loginWithGoogle, resetPassword} = useAuth();
+  //const { login, loginWithGoogle, resetPassword} = useAuth();
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  console.log(user);
+
+  const { login, loginWithGoogle, resetPassword} = useContext(authContext);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
