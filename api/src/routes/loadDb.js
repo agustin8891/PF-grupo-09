@@ -129,14 +129,9 @@ router.get("/", async (req, res) => {
   for (let i = 0; i < dbjson.package_activity.length; i++) {
     const currentObject = dbjson.package_activity[i];
     const idPackageSearch = currentObject.packageId;
-    const idActivitySearch = currentObject.activityId;
-
-    console.log("idPackageSearch", idPackageSearch)    
-    console.log("idActivitySearch", idActivitySearch)
-  
+    const idActivitySearch = currentObject.activityId;  
     const searchPackage = await Package.findByPk(idPackageSearch);
     const searchActivity = await Activity.findByPk(idActivitySearch);
-  
     await searchActivity.addPackage(searchPackage);
     await searchPackage.addActivity(searchActivity);
   }
