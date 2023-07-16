@@ -1,12 +1,9 @@
-require('dotenv').config();
-const { Sequelize } = require('sequelize');
-const fs = require('fs');
-const path = require('path');
+require("dotenv").config();
+const { Sequelize } = require("sequelize");
+const fs = require("fs");
+const path = require("path");
 
-
-const {
-  DB_USER, DB_PASSWORD, DB_HOST
-} = process.env;
+const { DB_USER, DB_PASSWORD, DB_HOST } = process.env;
 
 const sequelize = new Sequelize(
   `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/pfhenry`,
@@ -15,6 +12,7 @@ const sequelize = new Sequelize(
     native: false, // lets Sequelize know we can use pg-native for ~30% more speed
   }
 );
+
 const basename = path.basename(__filename);
 
 const modelDefiners = [];
@@ -42,7 +40,21 @@ sequelize.models = Object.fromEntries(capsEntries);
 // En sequelize.models están todos los modelos importados como propiedades
 // Para relacionarlos hacemos un destructuring
 
-const { City,Business,Activity,Plattform,Hotel,Package,Cart,StatusCart,User,CartDetail,ReviewHotel, ReviewActivity, ReviewBusiness } = sequelize.models;
+const {
+  City,
+  Business,
+  Activity,
+  Plattform,
+  Hotel,
+  Package,
+  Cart,
+  StatusCart,
+  User,
+  CartDetail,
+  ReviewHotel,
+  ReviewActivity,
+  ReviewBusiness,
+} = sequelize.models;
 
 // Aca vendrian las relaciones
 
@@ -67,7 +79,6 @@ Cart.belongsTo(User);
 Package.hasMany(CartDetail);
 CartDetail.belongsTo(Package);
 
-
 // relationship Plattform and Package
 Plattform.hasMany(Package);
 Package.belongsTo(Plattform);
@@ -82,7 +93,7 @@ Package.belongsToMany(Activity, {
   timestamps: false,
 });
 
-// relationship Business and Package 
+// relationship Business and Package
 Business.hasMany(Package);
 Package.belongsTo(Business);
 
@@ -90,7 +101,7 @@ Package.belongsTo(Business);
 City.hasMany(Package);
 Package.belongsTo(City);
 
-// relationship Hotel and Package
+// relationship Hotel and Package 
 Hotel.hasMany(Package);
 Package.belongsTo(Hotel);
 

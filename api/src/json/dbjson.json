@@ -1,0 +1,2363 @@
+{
+  "typeuser": [
+    {
+      "id": "1",
+      "description": "admin"
+    },
+    {
+      "id": "2",
+      "description": "client"
+    }
+  ],
+  "package_activity": [
+    {
+      "activityId": 1,
+      "packageId": 1
+    },
+    {
+      "activityId": 2,
+      "packageId": 1
+    },
+    {
+      "activityId": 3,
+      "packageId": 1
+    },
+    {
+      "activityId": 4,
+      "packageId": 1
+    },
+    {
+      "activityId": 2,
+      "packageId": 2
+    },
+    {
+      "activityId": 3,
+      "packageId": 2
+    },
+    {
+      "activityId": 1,
+      "packageId": 3
+    },
+    {
+      "activityId": 2,
+      "packageId": 3
+    },
+    {
+      "activityId": 3,
+      "packageId": 3
+    },
+    {
+      "activityId": 4,
+      "packageId": 3
+    },
+    {
+      "activityId": 5,
+      "packageId": 3
+    },
+    {
+      "activityId": 7,
+      "packageId": 4
+    },
+    {
+      "activityId": 8,
+      "packageId": 4
+    },
+    {
+      "activityId": 9,
+      "packageId": 5
+    },
+    {
+      "activityId": 10,
+      "packageId": 5
+    },
+    {
+      "activityId": 13,
+      "packageId": 7
+    },
+    {
+      "activityId": 14,
+      "packageId": 7
+    },
+    {
+      "activityId": 15,
+      "packageId": 8
+    },
+    {
+      "activityId": 16,
+      "packageId": 8
+    },
+    {
+      "activityId": 17,
+      "packageId": 9
+    },
+    {
+      "activityId": 18,
+      "packageId": 9
+    },
+    {
+      "activityId": 19,
+      "packageId": 10
+    },
+    {
+      "activityId": 20,
+      "packageId": 10
+    },
+    {
+      "activityId": 1,
+      "packageId": 11
+    },
+    {
+      "activityId": 2,
+      "packageId": 11
+    },
+    {
+      "activityId": 5,
+      "packageId": 13
+    },
+    {
+      "activityId": 6,
+      "packageId": 14
+    },
+    {
+      "activityId": 7,
+      "packageId": 15
+    }
+  ],
+  "activity": [
+    {
+      "id": 1,
+      "name": "Excursion en Cerro de los 7 Colores",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/bd/a4/4a/cerro-de-los-7-colores.jpg?w=1200&h=-1&s=1",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 3
+    },
+    {
+      "id": 2,
+      "name": "Excursion en Cerro Tunduqueral",
+      "image": "https://www.serargentino.com/public/images/2020/12/Petr%C3%B3glifos-1608747020.jpg",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 3
+    },
+    {
+      "id": 3,
+      "name": "Excursion Cruz del Paramillas",
+      "image": "http://elportaldemendoza.com/wp-content/uploads/2016/02/3-Paramillos.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 3
+    },
+    {
+      "id": 4,
+      "name": "Recorrido de un dia por las Cataratas del Iguazu",
+      "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/50/4c/84.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 4
+    },
+    {
+      "id": 5,
+      "name": "Crucero Iguazu",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/19/57/b5/5b/rio-iguazu.jpg",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 4
+    },
+    {
+      "id": 6,
+      "name": "Parque aereo en Selva de Iguazu",
+      "image": "https://www.nordic-travel.com.ar/es/wp-content/uploads/2020/06/flyparkgaleria1.jpg",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 4
+    },
+    {
+      "id": 7,
+      "name": "Excursion a las Sierras de Cordoba",
+      "image": "https://media.urgente24.com/p/90db0d1bab440ae1489b2fe9b3d17d1b/adjuntos/319/imagenes/002/594/0002594837/sierras-cordobajpg.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 16
+    },
+    {
+      "id": 8,
+      "name": "Excursion a la Cumbrecita",
+      "image": "https://tripin.travel/wp-content/uploads/2016/07/la-cumbrecita-3.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 16
+    },
+    {
+      "id": 9,
+      "name": "Laberinto de los cocos",
+      "image": "https://www.cadena3.com/admin/playerswf/fotos/ARCHI_827369.jpg",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 16
+    },
+    {
+      "id": 10,
+      "name": "Visita Parque Nacional Sierra de las Quijadas",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/a9/00/f0/sierra-de-las-quijadas.jpg?w=1200&h=-1&s=1",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 6
+    },
+    {
+      "id": 11,
+      "name": "Visita Salto de la Moneda",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/a0/32/94/vista-desde-el-salto.jpg?w=1200&h=-1&s=1",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 6
+    },
+    {
+      "id": 12,
+      "name": "Visita Chorro de San Ignacio",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/55/37/de/se-disfruta-a-pleno.jpg?w=1200&h=-1&s=1",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 6
+    },
+    {
+      "id": 13,
+      "name": "Visitar Puerto Mar del Plata",
+      "image": "https://storage.lacapitalmdp.com/2016/09/Puerto-MardelPlata-1024x576.jpg",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 7
+    },
+    {
+      "id": 14,
+      "name": "Paseo a Caballo",
+      "image": "https://www.anipedia.net/imagenes/rutas-caballo-en-familia.jpg",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 7
+    },
+    {
+      "id": 15,
+      "name": "Visitar Playas",
+      "image": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/32O5K56QHBE2RP33FLPXHFYZIY.jpeg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 7
+    },
+    {
+      "id": 16,
+      "name": "Visitar Puerto Madero",
+      "image": "https://enviajes.cl/wp-content/uploads/2021/05/Buenos-Aires-Puerto-Madero-Enviajes.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 8
+    },
+    {
+      "id": 17,
+      "name": "City Tour en Bus",
+      "image": "https://www.welcomeargentina.com/paseos/bus-buenos-aires/bus-buenos-aires-1.jpg",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 8
+    },
+    {
+      "id": 18,
+      "name": "Paseo en Velero",
+      "image": "https://d3tf9yuhsp2bpn.cloudfront.net/images/2019/10/23/20191023-1571861153-tour_atardecer_en_velero_de_lujo_desde_san_jose_tu_experiencia_1.jpg",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 8
+    },
+    {
+      "id": 19,
+      "name": "Paseo a Caballo",
+      "image": "https://www.anipedia.net/imagenes/rutas-caballo-en-familia.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 9
+    },
+    {
+      "id": 20,
+      "name": "Visitar Playas",
+      "image": "https://www.lavoz.com.ar/resizer/0rWwP9jilEGPvhn9ehPCqwq_GPw=/1023x682/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/OM3PTLW32REVNITFFANJBNSJGA.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 9
+    },
+    {
+      "id": 21,
+      "name": "City Tour en Bus",
+      "image": "https://www.welcomeargentina.com/paseos/bus-buenos-aires/bus-buenos-aires-1.jpg",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 9
+    },
+    {
+      "id": 22,
+      "name": "Visita Plaza Manuel Solares, Alta Gracia",
+      "image": "https://www.lavoz.com.ar/resizer/t60fH99X6sCj2nwcIhXiJ7aty9E=/1023x682/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/LGSQE4UIBZBBDA4FJIEAVUXHF4.jpg",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 10
+    },
+    {
+      "id": 23,
+      "name": "Visita Museo de Arte Gabriel Dubois",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Museo_Gabriel_Dubois.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 10
+    },
+    {
+      "id": 24,
+      "name": "Paseo a Caballo",
+      "image": "https://www.anipedia.net/imagenes/rutas-caballo-en-familia.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 10
+    },
+    {
+      "id": 25,
+      "name": "Visitar Playas",
+      "image": "https://www.clarin.com/img/2021/01/08/ug2-rQgoj_1200x630__1.jpg",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 11
+    },
+    {
+      "id": 26,
+      "name": "Visitar Parque Tematico Juguelandia",
+      "image": "https://www.villagesellturismo.com/wp-content/uploads/2021/05/jueguelandia-parque-tematico-villa-gesell.png",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 11
+    },
+    {
+      "id": 27,
+      "name": "Visitar Pinar del Norte",
+      "image": "http://www.gesell.gob.ar/image/11716/DSC_5490.JPg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 11
+    },
+    {
+      "id": 28,
+      "name": "Tour Glaciar Perito Moreno",
+      "image": "https://www.calafate.com/wp-content/uploads/2017/04/perito-1.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 12
+    },
+    {
+      "id": 29,
+      "name": "Visita de dia Completo a el Chalten",
+      "image": "https://media.staticontent.com/media/pictures/375c19e7-2653-4afb-8de3-bd4ccfc143e2/1366x406",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 12
+    },
+    {
+      "id": 30,
+      "name": "Navegacion todo Glaciares",
+      "image": "https://media.staticontent.com/media/pictures/2272cf42-cba7-4e4a-b0be-bc65fba8e4fb/1366x406",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 12
+    },
+    {
+      "id": 31,
+      "name": "Visitar Termas del Gualeguaychu",
+      "image": "https://fotos.perfil.com/2019/07/05/0705gualeguaychu-750012.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 13
+    },
+    {
+      "id": 32,
+      "name": "Visitar Altos del Gualeguaychu Viniedo y Bodega",
+      "image": "http://www.eldiariodeturismo.com.ar/wp-content/uploads/2021/12/Bodegas-Ianni-7.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 13
+    },
+    {
+      "id": 33,
+      "name": "Navegacion en Lancha",
+      "image": "https://cdn2.civitatis.com/argentina/gualeguaychu/galeria/lancha-rio-gualeguaychu-argentina.jpg",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 13
+    },
+    {
+      "id": 34,
+      "name": "Paseo a Caballo",
+      "image": "https://www.anipedia.net/imagenes/rutas-caballo-en-familia.jpg",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 14
+    },
+    {
+      "id": 35,
+      "name": "City Tour en Bus",
+      "image": "https://www.welcomeargentina.com/paseos/bus-buenos-aires/bus-buenos-aires-1.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 14
+    },
+    {
+      "id": 36,
+      "name": "Visitar Monumento a los Origenes",
+      "image": "https://www.municipioarroyito.gob.ar/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-29-at-11.38.45.jpeg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 14
+    },
+    {
+      "id": 37,
+      "name": "Visitar Monumento a la Bandera",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/e7/90/b4/monumento-a-la-bandera.jpg?w=1200&h=-1&s=1",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 15
+    },
+    {
+      "id": 38,
+      "name": "Paseo en Bote en las Aguas Danzantes",
+      "image": "https://rosarionuestro.com/wp-content/uploads/2019/10/aguas.jpg",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 15
+    },
+    {
+      "id": 39,
+      "name": "Visitar Balnearios",
+      "image": "https://static.ellitoral.com/um/fotos/417275_rosario_la_florida_1.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 15
+    },
+    {
+      "id": 40,
+      "name": "Excursion cerro catedral",
+      "image": "https://media.ambito.com/p/69050c84e2cfed04a7188abcd6afd6e0/adjuntos/239/imagenes/037/879/0037879550/1200x675/smart/cerro-catedraljpg.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 5
+    },
+    {
+      "id": 41,
+      "name": "Excursion cerro otto",
+      "image": "https://barilocheturismo.gob.ar/images/actividades/cerros/otto/cerrootto_03.jpg",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 5
+    },
+    {
+      "id": 42,
+      "name": "Visita a fabricas de chocolate",
+      "image": "https://bariloche.org/wp-content/uploads/2016/10/chocolates-bariloche-mamushka.jpg",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 5
+    },
+    {
+      "id": 43,
+      "name": "Visitar Playas",
+      "image": "https://www.clarin.com/img/2021/01/08/ug2-rQgoj_1200x630__1.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 17
+    },
+    {
+      "id": 44,
+      "name": "Cuatriciclo por las Playas de Mar de Ajo",
+      "image": "https://www.welcomeargentina.com/paseos/domadores_arenas/copete_360x220.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 17
+    },
+    {
+      "id": 45,
+      "name": "Escapada a Nueva Atlantis",
+      "image": "https://www.welcomeargentina.com/paseos/escapada_nueva_atlantis/nueva-atlantis-1.jpg",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 17
+    },
+    {
+      "id": 46,
+      "name": "Experiencia Tren a las Nubes",
+      "image": "https://www.cronista.com/files/image/302/302941/5ffe1ed2f0e0d.jpg",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 18
+    },
+    {
+      "id": 47,
+      "name": "Visitar Salinas Grandes",
+      "image": "https://media.viajando.travel/p/110a6b96f95ecc22c04d5b4fd9510e85/adjuntos/255/imagenes/000/391/0000391077/salinas-grandes-paisajejpg.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 18
+    },
+    {
+      "id": 48,
+      "name": "Ruta de vino de Salta",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Salta%27s_La_Ruta_del_Vino.jpg/1200px-Salta%27s_La_Ruta_del_Vino.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 18
+    },
+    {
+      "id": 49,
+      "name": "Pase Cerro Castor con Equipo de Snowboard",
+      "image": "https://media.staticontent.com/media/pictures/8a197c9a-110a-41b4-baa3-85d267c4bda1/1366x406",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 19
+    },
+    {
+      "id": 50,
+      "name": "Navegacion por el canal de Beagle y visita a Islas Bridges",
+      "image": "https://media.staticontent.com/media/pictures/ec61a521-dc18-404e-ac75-b39f61a8aa01/1366x406",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 19
+    },
+    {
+      "id": 51,
+      "name": "Aventuras en la nieve",
+      "image": "https://media.staticontent.com/media/pictures/488f02a9-fcbe-42f1-8752-dcbe82823987/1366x406",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 19
+    },
+    {
+      "id": 52,
+      "name": "Tour Paronamico",
+      "image": "https://cdn2.civitatis.com/argentina/villa-la-angostura/galeria/puerto-manzano.jpg",
+      "price": 3000,
+      "enabled": true,
+      "cityId": 20
+    },
+    {
+      "id": 53,
+      "name": "Paseo a Caballo",
+      "image": "https://www.anipedia.net/imagenes/rutas-caballo-en-familia.jpg",
+      "price": 1000,
+      "enabled": true,
+      "cityId": 20
+    },
+    {
+      "id": 54,
+      "name": "Paseo Mountain Bike",
+      "image": "https://www.villalaangostura.com.ar/imgs/paseos/Paseo_378553419.jpg",
+      "price": 2000,
+      "enabled": true,
+      "cityId": 20
+    }
+  ],
+  "booking": [
+    {
+      "id": 1,
+      "dateTime": "2022-07-21 15:30:00:00",
+      "amount": 10000,
+      "numberPeople": 1,
+      "status": "pagado",
+      "packageId": 1,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "dateTime": "2022-07-21 15:30:00:00",
+      "amount": 14000,
+      "numberPeople": 1,
+      "status": "pagado",
+      "packageId": 2,
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 11000,
+      "numberPeople": 1,
+      "status": "pagado",
+      "packageId": 3,
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 20000,
+      "numberPeople": 2,
+      "status": "pagado",
+      "packageId": 4,
+      "userId": 4
+    },
+    {
+      "id": 5,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 23000,
+      "numberPeople": 2,
+      "status": "pagado",
+      "packageId": 5,
+      "userId": 5
+    },
+    {
+      "id": 6,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 19000,
+      "numberPeople": 2,
+      "status": "pagado",
+      "packageId": 6,
+      "userId": 6
+    },
+    {
+      "id": 7,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 12000,
+      "numberPeople": 3,
+      "status": "pagado",
+      "packageId": 1,
+      "userId": 7
+    },
+    {
+      "id": 8,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 30000,
+      "numberPeople": 3,
+      "status": "pagado",
+      "packageId": 2,
+      "userId": 8
+    },
+    {
+      "id": 9,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 40000,
+      "numberPeople": 4,
+      "status": "pagado",
+      "packageId": 3,
+      "userId": 9
+    },
+    {
+      "id": 10,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 30000,
+      "numberPeople": 4,
+      "status": "pagado",
+      "packageId": 4,
+      "userId": 10
+    },
+    {
+      "id": 11,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 40000,
+      "numberPeople": 1,
+      "status": "reserved",
+      "packageId": 5,
+      "userId": 1
+    },
+    {
+      "id": 12,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 30000,
+      "numberPeople": 1,
+      "status": "reserved",
+      "packageId": 6,
+      "userId": 2
+    },
+    {
+      "id": 13,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 40000,
+      "numberPeople": 1,
+      "status": "reserved",
+      "packageId": 1,
+      "userId": 3
+    },
+    {
+      "id": 14,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 30000,
+      "numberPeople": 2,
+      "status": "reserved",
+      "packageId": 2,
+      "userId": 4
+    },
+    {
+      "id": 15,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 40000,
+      "numberPeople": 2,
+      "status": "reserved",
+      "packageId": 3,
+      "userId": 5
+    },
+    {
+      "id": 16,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 30000,
+      "numberPeople": 2,
+      "status": "reserved",
+      "packageId": 4,
+      "userId": 6
+    },
+    {
+      "id": 17,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 40000,
+      "numberPeople": 3,
+      "status": "reserved",
+      "packageId": 5,
+      "userId": 7
+    },
+    {
+      "id": 18,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 30000,
+      "numberPeople": 3,
+      "status": "reserved",
+      "packageId": 6,
+      "userId": 8
+    },
+    {
+      "id": 19,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 40000,
+      "numberPeople": 1,
+      "status": "reserved",
+      "packageId": 1,
+      "userId": 9
+    },
+    {
+      "id": 20,
+      "dateTime": "2022-07-21 08:00:00:00",
+      "amount": 30000,
+      "numberPeople": 2,
+      "status": "reserved",
+      "packageId": 2,
+      "userId": 10
+    }
+  ],
+  "buses": [
+    {
+      "id": 1,
+      "name": "FLECHABUS",
+      "phone": 1125468579,
+      "email": "example@gmail.com",
+      "enabled": true
+    },
+    {
+      "id": 2,
+      "name": "CHEVALLIER",
+      "phone": 1125468579,
+      "email": "example@gmail.com",
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "name": "EXPRESO DEL OESTE",
+      "phone": 1125468579,
+      "email": "example@gmail.com",
+      "enabled": true
+    },
+    {
+      "id": 4,
+      "name": "PLUSMAR",
+      "phone": 1125468579,
+      "email": "example@gmail.com",
+      "enabled": true
+    },
+    {
+      "id": 5,
+      "name": "RUTATLANTICA",
+      "phone": 1125468579,
+      "email": "example@gmail.com",
+      "enabled": true
+    }
+  ],
+  "city": [
+    {
+      "id": 3,
+      "name": "Uspallata",
+      "location": [-32.59001244805651, -69.34814783854675],
+      "image": [
+        "https://viajerosocultos.com/wp-content/uploads/2021/07/pxfuel.com-2-1024x678.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 4,
+      "name": "Puerto Iguazu",
+      "location": [-38.02099967967365, -57.57857006926223],
+      "image": [
+        "https://content.r9cdn.net/rimg/dimg/00/b2/0741409b-lm-83108-1697ceb7c46.jpg?width=1366&height=768&xhint=1297&yhint=1081&crop=true"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 5,
+      "name": "Bariloche",
+      "location": [-41.13886991727128, -71.28155790683687],
+      "image": [
+        "https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2020/05/08213126/shutterstock_1371228326.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 6,
+      "name": "San Luis",
+      "location": [-33.288468804137494, -66.30915115732756],
+      "image": [
+        "https://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2017/09/59afc8766dc05_900.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 7,
+      "name": "Mar del Plata",
+      "location": [-38.02099967967365, -57.57857006926223],
+      "image": [
+        "https://imgs-akamai.mnstatic.com/b5/8a/b58a47aa20f66d3a80b98a2edc74637a.jpg?quality=75&format=pjpg&fit=bounds&width=980&height=880"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 8,
+      "name": "Buenos Aires",
+      "location": [-34.57250261154069, -58.490299103837536],
+      "image": [
+        "https://cdn2.civitatis.com/argentina/buenos-aires/galeria/obelisco-buenos-aires.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 9,
+      "name": "Almafuerte (Cordoba)",
+      "location": [-32.18807494710029, -64.2595463909004],
+      "image": [
+        "https://www.cordobaturismo.gov.ar/wp-content/uploads/2020/06/01-Tapa.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 10,
+      "name": "Alta Gracia",
+      "location": [-31.637923126475734, -64.46202316249995],
+      "image": [
+        "https://www.diariosumario.com.ar/u/fotografias/fotosnoticias/2019/10/18/20479.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 11,
+      "name": "Villa Gesell",
+      "location": [-37.2642969269781, -56.99405235645309],
+      "image": [
+        "https://upload.wikimedia.org/wikipedia/commons/9/9d/Villa_Gesell_-_panoramio_-_VANT_Vistas_A%C3%A9reas_%285%29_%28cropped%29.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 12,
+      "name": "Calafate",
+      "location": [-50.34132487410154, -72.27069920115188],
+      "image": [
+        "https://img.freepik.com/fotos-premium/increible-vista-glaciar-perito-moreno-ciudad-calafate-patagonia-argentina_76000-4046.jpg?w=2000"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 13,
+      "name": "Gualeguaychu",
+      "location": [-33.00023751609672, -58.53847850521999],
+      "image": [
+        "https://argentour.com/wp-content/uploads/2020/05/Ciudad-Parana-2-800x600.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 14,
+      "name": "Arroyito (Cordoba)",
+      "location": [-31.418170310474927, -63.049776262670434],
+      "image": [
+        "https://hablemosdeargentina.com/wp-content/uploads/2018/04/arroyito-5.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 15,
+      "name": "Rosario",
+      "location": [-32.95377424444602, -60.67432583805925],
+      "image": ["https://www.clarin.com/img/2015/11/10/BksaAQJVe_720x0.jpg"],
+      "enabled": true
+    },
+    {
+      "id": 16,
+      "name": "Cordoba",
+      "location": [-31.400256176241378, -64.19710002518033],
+      "image": [
+        "https://www.cordobaturismo.gov.ar/wp-content/uploads/2018/07/Ciudad-de-C%C3%B3rdoba-1.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 17,
+      "name": "Mar de Ajo",
+      "location": [-36.72322307450933, -56.68633091633551],
+      "image": [
+        "https://www.welcomeargentina.com/paseos/recorrida-mar-de-ajo/mar-de-ajo-city-tour-1.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 18,
+      "name": "Salta",
+      "location": [-24.81118360101553, -65.43372106056756],
+      "image": [
+        "https://estilodv.com/public/images/posts/3654-cinco-imperdibles-en-salta-ciudad.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 19,
+      "name": "Ushuaia",
+      "location": [-54.814064554047334, -68.31962778709435],
+      "image": [
+        "https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2018/08/30181407/35089176364_4e1d1f32bf_o.jpg"
+      ],
+      "enabled": true
+    },
+    {
+      "id": 20,
+      "name": "Villa la Angostura",
+      "location": [-40.76450303300351, -71.6429489925501],
+      "image": [
+        "https://www.interpatagonia.com/villalaangostura/imagenes/villa-la-angostura.jpg"
+      ],
+      "enabled": true
+    }
+  ],
+  "hotel": [
+    {
+      "id": 1,
+      "name": "Amerian Cordoba Park Hotel",
+      "location": [-31.420302902492253, -64.18835035986125],
+      "stars": 4,
+      "phone": "155-334545",
+      "price": 5800,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://osepmendoza.com.ar/web/wp-content/uploads/2018/12/AMERIAN-CORDOBA.jpg"
+      ],
+      "enabled": true,
+      "cityId": 16
+    },
+    {
+      "id": 2,
+      "name": "Hotel Buen Pastor Capuchinos",
+      "location": [-31.423536531878145, -64.18557122946223],
+      "stars": 2,
+      "phone": "0351 391-7200",
+      "price": 4300,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ca/82/20/fachada.jpg?w=1200&h=-1&s=1"
+      ],
+      "enabled": true,
+      "cityId": 16
+    },
+    {
+      "id": 3,
+      "name": "Novum Suites Hotel",
+      "location": [-31.410825211523182, -64.17604788713295],
+      "stars": 3,
+      "phone": "0351 423-2931",
+      "price": 5867,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/df/df/6a/novum-suites.jpg?w=1200&h=-1&s=1"
+      ],
+      "enabled": true,
+      "cityId": 16
+    },
+    {
+      "id": 4,
+      "name": "Gran Uspallata Hotel",
+      "location": [-32.579564881759936, -69.35270737577834],
+      "stars": 3,
+      "phone": "02642442-0003",
+      "price": 9500,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://mendoza.travel/wp-content/uploads/uspallata-mendoza-002.jpg"
+      ],
+      "enabled": true,
+      "cityId": 3
+    },
+    {
+      "id": 5,
+      "name": "Hotel Pukarainca",
+      "location": [-32.47796628213492, -69.36238403118803],
+      "stars": 3,
+      "phone": "0261 631-4224",
+      "price": 14000,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/4479349.jpg?k=1aa2d840d7d92540a8269d12bc5f43af35a3733577d087d906e3c510e8ac3b23&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 3
+    },
+    {
+      "id": 6,
+      "name": "Bien de Altura Hotel",
+      "location": [-32.546363973890976, -69.32089280704871],
+      "stars": 3,
+      "phone": "0261 15-333-6333",
+      "price": 10500,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/278926040.jpg?k=c660a27b8ee3971a1b6324d7d1f0a038209e1c2fef84e91b753ae8f90e8029df&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 3
+    },
+    {
+      "id": 7,
+      "name": "Hotel Concept Bariloche",
+      "location": [-41.13448542401938, -71.30799797308167],
+      "stars": 3,
+      "phone": "0294 436-7585",
+      "price": 10984,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://images.trvl-media.com/hotels/76000000/75970000/75960300/75960295/4cfabb51.jpg?impolicy=resizecrop&rw=598&ra=fit"
+      ],
+      "enabled": true,
+      "cityId": 5
+    },
+    {
+      "id": 8,
+      "name": "Huella Andina Hotel",
+      "location": [-41.13820257544111, -71.30948825978],
+      "stars": 3,
+      "phone": "54 9 2942 618709",
+      "price": 8774,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/images/hotel/840x460/334/334865180.jpg"
+      ],
+      "enabled": true,
+      "cityId": 5
+    },
+    {
+      "id": 9,
+      "name": "Hotel Internacional",
+      "location": [-41.13370084429402, -71.30724205793055],
+      "stars": 2,
+      "phone": "0294 442-5938",
+      "price": 13200,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://bariloche.org/directorio/photos/1772/file/1361/Hotel%20Internacional%20Bariloche"
+      ],
+      "enabled": true,
+      "cityId": 5
+    },
+    {
+      "id": 10,
+      "name": "Hotel Punta Lavalle",
+      "location": [-33.298113450865266, -66.3285006886505],
+      "stars": 2,
+      "phone": "266-4428611",
+      "price": 7337,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/25407767.jpg?k=6c902f3b900dc4c6403324d5ede56550fafe74ada93f4da49d0ee591341cb32a&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 6
+    },
+    {
+      "id": 11,
+      "name": "Gran Hotel San Luis Gold",
+      "location": [-33.2996493173398, -66.34477105795791],
+      "stars": 3,
+      "phone": "266-4425049",
+      "price": 12135,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://media.staticontent.com/media/pictures/20b1b5e9-de3b-4e9e-a2a3-00ed8b08ff42/1120x700?op=fit"
+      ],
+      "enabled": true,
+      "cityId": 6
+    },
+    {
+      "id": 12,
+      "name": "Hotel Aiello",
+      "location": [-33.30004202155427, -66.34493418883827],
+      "stars": 3,
+      "phone": "0266 442-5694",
+      "price": 9035,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/10/65/1065966_v1.jpeg"
+      ],
+      "enabled": true,
+      "cityId": 6
+    },
+    {
+      "id": 13,
+      "name": "Iguazu Urban Hotel",
+      "location": [-25.596725000792528, -54.568453259991756],
+      "stars": 2,
+      "phone": "03757 15-45-8904",
+      "price": 9350,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": ["https://i.ytimg.com/vi/s-UdSt4b13A/maxresdefault.jpg"],
+      "enabled": true,
+      "cityId": 4
+    },
+    {
+      "id": 14,
+      "name": "Hotel Luces de la Selva",
+      "location": [-25.594270408882974, -54.57102706018062],
+      "stars": 3,
+      "phone": "03757 42-2756",
+      "price": 9300,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/130513394.jpg?k=05cb83edeb67336722788285df2898255d5b5ac60370f9f3809f4abd25a86479&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 4
+    },
+    {
+      "id": 15,
+      "name": "Exe Hotel Cataratas",
+      "location": [-25.616040683311855, -54.55808473134444],
+      "stars": 3,
+      "phone": "03757  42-1100",
+      "price": 13245,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/8b/6c/6e/exe-hotel-cataratas.jpg?w=1200&h=-1&s=1"
+      ],
+      "enabled": true,
+      "cityId": 4
+    },
+    {
+      "id": 16,
+      "name": "Hotel Rivoli Mar del Plata",
+      "location": [-38.00025716455194, -57.54303088852175],
+      "stars": 3,
+      "phone": "0223 493-0051",
+      "price": 6673,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://pix10.agoda.net/hotelImages/404/404197/404197_13102707400017129927.jpg?ca=2&ce=1&s=768x1024"
+      ],
+      "enabled": true,
+      "cityId": 7
+    },
+    {
+      "id": 17,
+      "name": "Hotel Europa",
+      "location": [-38.0110521432098, -57.54678435802411],
+      "stars": 2,
+      "phone": "0223 494-0436",
+      "price": 2402,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/148934024.jpg?k=1b60c63311fd26ce45dc80695eee93aebf8891c23bec7ecda7dd4156a6f02937&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 7
+    },
+    {
+      "id": 18,
+      "name": "Hotel Argentino",
+      "location": [-38.002497861589156, -57.54425017336684],
+      "stars": 3,
+      "phone": "0223 626-0045",
+      "price": 4617,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/d2/ee/f8/hall.jpg?w=1200&h=-1&s=1"
+      ],
+      "enabled": true,
+      "cityId": 7
+    },
+    {
+      "id": 19,
+      "name": "Amerian Buenos Aires Park Hotel",
+      "location": [-34.59967800103064, -58.372498817639816],
+      "stars": 4,
+      "phone": "011 5171-6500",
+      "price": 13623,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://www.amerian.com/admin/imgHoteles/RutaImag-d57qd.jpg"
+      ],
+      "enabled": true,
+      "cityId": 8
+    },
+    {
+      "id": 20,
+      "name": "Hotel Ibis Buenos Aires Congreso",
+      "location": [-34.610031100560285, -58.388888015790066],
+      "stars": 3,
+      "phone": "011 5300-5555",
+      "price": 9215,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1280x900/321270789.jpg?k=ae5362cf7ecfe0884aa963a1de05e1fadc336da880f31a9e6fcaf4b0676288da&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 8
+    },
+    {
+      "id": 21,
+      "name": "Hotel Bisonte Libertad",
+      "location": [-34.59793818660668, -58.38433945996854],
+      "stars": 4,
+      "phone": "011 3723-2520",
+      "price": 6634,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://www.bisontelibertad.com/resources/img/imgTxt/hotel-bisonte-libertad-SLL_1_50.jpg"
+      ],
+      "enabled": true,
+      "cityId": 8
+    },
+    {
+      "id": 22,
+      "name": "Howard Johnson Hotel",
+      "location": [-32.174297697319645, -64.22802495798643],
+      "stars": 3,
+      "phone": "0357150-0333",
+      "price": 10218,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/39018330.jpg?k=5deb68ea5214a820b953afa0ee4a929e8be51cba464298444388cf6812fb39f0&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 9
+    },
+    {
+      "id": 23,
+      "name": "Hotel de la Plaza",
+      "location": [-32.1927116394011, -64.25383355818119],
+      "stars": 3,
+      "phone": "03571 47-1229",
+      "price": 3500,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://q-xx.bstatic.com/xdata/images/hotel/max500/138998862.jpg?k=0b5c087be473551dd07d60208cc9b81109d89c571f5e0b63b3ad9353274f135e&o="
+      ],
+      "enabled": true,
+      "cityId": 9
+    },
+    {
+      "id": 24,
+      "name": "Hotel Solares",
+      "location": [-31.651961155077164, -64.44322500218229],
+      "stars": 3,
+      "phone": "03547 57-1571",
+      "price": 8815,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/249835393.jpg?k=372cf1a2cf957d968826cdc8a27294408eea0d71af724dd5f8b5161491fb6370&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 10
+    },
+    {
+      "id": 25,
+      "name": "Hotel Complejo Maktub Alta Gracia",
+      "location": [-31.641859005792732, -64.44349521038933],
+      "stars": 3,
+      "phone": "0357 15-56-2493",
+      "price": 4407,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://www.panamericano.cl/wp-content/uploads/2021/12/habitacion-single-hotel-panamericano.jpg"
+      ],
+      "enabled": true,
+      "cityId": 10
+    },
+    {
+      "id": 26,
+      "name": "Hotel Ritz",
+      "location": [-31.65292102399613, -64.43096529602232],
+      "stars": 3,
+      "phone": "03547 42-2565",
+      "price": 7092,
+      "pool": false,
+      "wifi": true,
+      "gym": true,
+      "urlImage": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/cd/e4/11/hotel-ritz.jpg?w=1200&h=-1&s=1"
+      ],
+      "enabled": true,
+      "cityId": 10
+    },
+    {
+      "id": 27,
+      "name": "San Remo Palace Hotel",
+      "location": [-37.25164763055212, -56.965860290399426],
+      "stars": 3,
+      "phone": "0810-222-8880",
+      "price": 4472,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/162718401.jpg?k=62d142af22199cdfdb571bdaa16d98554c94f5ffdec890beb7a12bd16756453f&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 11
+    },
+    {
+      "id": 28,
+      "name": "Tamanacos Hotel",
+      "location": [-37.25613461804184, -56.965414702224024],
+      "stars": 3,
+      "phone": "02255 46-8753",
+      "price": 11719,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://media-cdn.tripadvisor.com/media/photo-s/13/d1/eb/4c/hotel-tamanacos.jpg"
+      ],
+      "enabled": true,
+      "cityId": 11
+    },
+    {
+      "id": 29,
+      "name": "Hotel Fonte Arcada",
+      "location": [-37.2617850891463, -56.96992030222386],
+      "stars": 4,
+      "phone": "02255 47-4700",
+      "price": 9445,
+      "pool": true,
+      "wifi": true,
+      "gym": true,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/62832893.jpg?k=2de34a5e6a1bb7a6bb781371c268716e8a0ec42cb44a6ec0ae8c747ef8ea209a&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 11
+    },
+    {
+      "id": 30,
+      "name": "Hotel Design Suites Calafate",
+      "location": [-50.31788173609226, -72.25067669995067],
+      "stars": 4,
+      "phone": "02902 49-4525",
+      "price": 21284,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/3a/b2/20/design-suites-calafate.jpg?w=1200&h=-1&s=1"
+      ],
+      "enabled": true,
+      "cityId": 12
+    },
+    {
+      "id": 31,
+      "name": "Hotel Mirador del Lago",
+      "location": [-50.339460995049556, -72.28050447296378],
+      "stars": 4,
+      "phone": "02902 49-3213",
+      "price": 16223,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://www.elcalafate.tur.ar/img/anunciantes/151/mirador-del-lago-hotel-4-xl.jpg"
+      ],
+      "enabled": true,
+      "cityId": 12
+    },
+    {
+      "id": 32,
+      "name": "Hotel Lagos del Calafate",
+      "location": [-50.34357191095196, -72.24926045947056],
+      "stars": 4,
+      "phone": "02902 49-1777",
+      "price": 18031,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://www.lagosdelcalafate.com/imagenes/galeria-total/slider/02-ubicacion-preferencial.jpg"
+      ],
+      "enabled": true,
+      "cityId": 12
+    },
+    {
+      "id": 33,
+      "name": "Hotel Aguay",
+      "location": [-33.01013191015239, -58.50529863117448],
+      "stars": 4,
+      "phone": "03446 42-2099",
+      "price": 7428,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://hotelaguay.com.ar/wp-content/uploads/2022/05/portada-movil.webp"
+      ],
+      "enabled": true,
+      "cityId": 13
+    },
+    {
+      "id": 34,
+      "name": "Hotel Guayra Gualeguaychu",
+      "location": [-33.006799537156645, -58.49960098514679],
+      "stars": 3,
+      "phone": "03446 43-5413",
+      "price": 22706,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/99068000.jpg?k=aaabf39096dfbc794198d0e92f3ac6ebf001d530fa9d09b1015ac561fe37c6e0&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 13
+    },
+    {
+      "id": 35,
+      "name": "Hotel Aleman",
+      "location": [-33.01064996410152, -58.51031288699622],
+      "stars": 3,
+      "phone": "03446 61-7095",
+      "price": 7346,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/d7/08/f5/vista-exterior.jpg"
+      ],
+      "enabled": true,
+      "cityId": 13
+    },
+    {
+      "id": 36,
+      "name": "Hotel Americano",
+      "location": [-31.424100033170816, -63.05281201753424],
+      "stars": 2,
+      "phone": "0357642-3735",
+      "price": 3500,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://www.hotelcontact.net/image/argentina/cordoba/san-justo-department/hotel-americano-arroyito-1607524190.jpg"
+      ],
+      "enabled": true,
+      "cityId": 14
+    },
+    {
+      "id": 37,
+      "name": "Hotel Ona",
+      "location": [-31.42086127394626, -63.05839501108453],
+      "stars": 3,
+      "phone": "03576 15-46-4354",
+      "price": 4000,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": ["https://mapio.net/images-p/34219475.jpg"],
+      "enabled": true,
+      "cityId": 14
+    },
+    {
+      "id": 38,
+      "name": "Ross Tower Hotel",
+      "location": [-32.940070873500204, -60.63794559254657],
+      "stars": 5,
+      "phone": "0341-4445565",
+      "price": 17800,
+      "pool": true,
+      "wifi": true,
+      "gym": true,
+      "urlImage": [
+        "https://images.trvl-media.com/hotels/2000000/1740000/1733400/1733362/df109415.jpg?impolicy=resizecrop&rw=670&ra=fit"
+      ],
+      "enabled": true,
+      "cityId": 15
+    },
+    {
+      "id": 39,
+      "name": "Hotel Riviera",
+      "location": [-32.942852262224335, -60.642585442819716],
+      "stars": 4,
+      "phone": "0341-424-2058",
+      "price": 13397,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://y.cdrst.com/foto/hotel-sf/54ad/granderesp/hotel-solans-riviera-general-a60529e.jpg"
+      ],
+      "enabled": true,
+      "cityId": 15
+    },
+    {
+      "id": 40,
+      "name": "Ariston Hotel",
+      "location": [-32.94250884976103, -60.657868246518724],
+      "stars": 4,
+      "phone": "0800-555-0344",
+      "price": 8570,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://picsv3.pxsol.com/1217/company/library/user/209394497137de94aa9d4ab3e8a7f395b32600345c1.jpeg?ixlib=js-2.3.2&s=3243b4a3b198cb134918468d7d482191"
+      ],
+      "enabled": true,
+      "cityId": 15
+    },
+    {
+      "id": 41,
+      "name": "San Remo Majestic Hotel",
+      "location": [-36.719849282147315, -56.67570844623154],
+      "stars": 2,
+      "phone": "02257 42-9082",
+      "price": 28148,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/309841381.jpg?k=b82a4073984c89fd23ce348cd8f3d6bf010e2f21115fd239c90c3e517e2465da&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 17
+    },
+    {
+      "id": 42,
+      "name": "Hotel San Marcos",
+      "location": [-36.72019838339493, -56.677242719431355],
+      "stars": 1,
+      "phone": "02257 53-0383",
+      "price": 5172,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://pmcasa.com/wp-content/uploads/2019/12/paulina-moran-chable-yucatan-1-1024x575.jpg"
+      ],
+      "enabled": true,
+      "cityId": 17
+    },
+    {
+      "id": 43,
+      "name": "Hotel Lantanio",
+      "location": [-36.70807304333476, -56.676375127376026],
+      "stars": 3,
+      "phone": "02257 42-3899",
+      "price": 8014,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": ["https://www.mardeajo.com/servicios/s421_2.jpg"],
+      "enabled": true,
+      "cityId": 17
+    },
+    {
+      "id": 44,
+      "name": "Hotel Posada del Sol",
+      "location": [-24.790753850830626, -65.41061813136092],
+      "stars": 3,
+      "phone": "0387 431-7300",
+      "price": 15026,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://media-cdn.tripadvisor.com/media/photo-s/05/8b/e7/13/luna-de-mil-en-salta.jpg"
+      ],
+      "enabled": true,
+      "cityId": 18
+    },
+    {
+      "id": 45,
+      "name": "Alto Parque Hotel",
+      "location": [-24.793585756782097, -65.40676948903231],
+      "stars": 3,
+      "phone": "0387-422-9988",
+      "price": 6972,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/e6/9d/24/alto-parque-hotel.jpg?w=1200&h=-1&s=1"
+      ],
+      "enabled": true,
+      "cityId": 18
+    },
+    {
+      "id": 46,
+      "name": "Dickens Apart Hotel",
+      "location": [-24.7799600353422, -65.42855742951147],
+      "stars": 3,
+      "phone": "0387 567.8215",
+      "price": 5409,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max500/174989320.jpg?k=8e20c02101c38ae2d890aa25af31c28116723c5f075a141dd243c5037100cf3a&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 18
+    },
+    {
+      "id": 47,
+      "name": "Australis Kauyeken Hotel",
+      "location": [-54.75099051026264, -68.19806545930619],
+      "stars": 4,
+      "phone": "011 4322-3888",
+      "price": 16155,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": ["https://vive-media-tpvbooking.netdna-ssl.com/171896/0.jpg"],
+      "enabled": true,
+      "cityId": 19
+    },
+    {
+      "id": 48,
+      "name": "Hotel los Naranjos",
+      "location": [-54.8095428655542, -68.31768944396141],
+      "stars": 3,
+      "phone": "02901 43-5873",
+      "price": 21104,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://los-naranjos.hotelesenpatagonia.com/data/Photos/Big3/7752/775251/775251538.JPEg"
+      ],
+      "enabled": true,
+      "cityId": 19
+    },
+    {
+      "id": 49,
+      "name": "Hotel Antartida Argentina",
+      "location": [-54.80477879371156, -68.30151817279716],
+      "stars": 2,
+      "phone": "02901 43-5761",
+      "price": 5677,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://media-cdn.tripadvisor.com/media/photo-s/02/63/ac/c6/filename-hotel-4-jpg.jpg"
+      ],
+      "enabled": true,
+      "cityId": 19
+    },
+    {
+      "id": 50,
+      "name": "Hotel Angostura",
+      "location": [-40.78138516670594, -71.65621057698311],
+      "stars": 2,
+      "phone": "0294 449-4224",
+      "price": 13624,
+      "pool": false,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://media-cdn.tripadvisor.com/media/photo-s/01/91/63/87/vista-exterior-del-hotel.jpg"
+      ],
+      "enabled": true,
+      "cityId": 20
+    },
+    {
+      "id": 51,
+      "name": "Hotel los 3 Mosqueteros",
+      "location": [-40.78201646852036, -71.65667263095538],
+      "stars": 3,
+      "phone": "0294 449-4217",
+      "price": 16000,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/3b/06/b9/los-3-mosqueteros.jpg?w=1200&h=-1&s=1"
+      ],
+      "enabled": true,
+      "cityId": 20
+    },
+    {
+      "id": 52,
+      "name": "Hotel Marinas Alto Manzano",
+      "location": [-40.79910237411473, -71.58882632910526],
+      "stars": 3,
+      "phone": "0294 447-5354",
+      "price": 21953,
+      "pool": true,
+      "wifi": true,
+      "gym": false,
+      "urlImage": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1280x900/157912890.jpg?k=429a6429f8448943338005fbef68be20725bdbd383b5b609f2003575f8bb5b32&o=&hp=1"
+      ],
+      "enabled": true,
+      "cityId": 20
+    }
+  ],
+  "package": [
+    {
+      "id": 1,
+      "name": "Nuevos Horizontes en Uspallata",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 70000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 1,
+      "businessId": 1,
+      "cityId": 3,
+      "hotelId": 4
+    },
+    {
+      "id": 2,
+      "name": "Adrenalina y diversion en Puerto Iguazu",
+      "start_date": "2023-08-11",
+      "end_date": "2023-08-18",
+      "price": 900000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 2,
+      "businessId": 2,
+      "cityId": 4,
+      "hotelId": 13
+    },
+    {
+      "id": 3,
+      "name": "Dias de descanso en Bariloche",
+      "start_date": "2023-08-15",
+      "end_date": "2023-08-22",
+      "price": 80000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 3,
+      "businessId": 3,
+      "cityId": 5,
+      "hotelId": 7
+    },
+    {
+      "id": 4,
+      "name": "Conoce San Luis",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 70000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 4,
+      "businessId": 4,
+      "cityId": 6,
+      "hotelId": 11
+    },
+    {
+      "id": 5,
+      "name": "Diversion en Mar del Plata",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 80000,
+      "discount": 1,
+      "stock": 60,
+      "enabled": true,
+      "plattformId": 5,
+      "businessId": 1,
+      "cityId": 7,
+      "hotelId": 16
+    },
+    {
+      "id": 7,
+      "name": "Buenos Aires te Espera",
+      "start_date": "2023-09-11",
+      "end_date": "2023-09-18",
+      "price": 50000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 7,
+      "businessId": 3,
+      "cityId": 8,
+      "hotelId": 20
+    },
+    {
+      "id": 8,
+      "name": "Conoce Almafuerte",
+      "start_date": "2023-09-23",
+      "end_date": "2023-09-30",
+      "price": 40000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 1,
+      "businessId": 4,
+      "cityId": 9,
+      "hotelId": 22
+    },
+    {
+      "id": 9,
+      "name": "Alta Gracia te Espera",
+      "start_date": "2023-09-05",
+      "end_date": "2023-09-12",
+      "price": 70000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 2,
+      "businessId": 1,
+      "cityId": 10,
+      "hotelId": 24
+    },
+    {
+      "id": 10,
+      "name": "Desconexion natural en Villa Gesell",
+      "start_date": "2023-09-11",
+      "end_date": "2023-09-18",
+      "price": 90000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 3,
+      "businessId": 2,
+      "cityId": 11,
+      "hotelId": 27
+    },
+    {
+      "id": 11,
+      "name": "Lagos del Calafate",
+      "start_date": "2023-10-01",
+      "end_date": "2023-10-07",
+      "price": 85000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 4,
+      "businessId": 3,
+      "cityId": 12,
+      "hotelId": 30
+    },
+    {
+      "id": 13,
+      "name": "Gualeguaychu diversion",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 50000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 6,
+      "businessId": 1,
+      "cityId": 13,
+      "hotelId": 33
+    },
+    {
+      "id": 14,
+      "name": "Conoce Arroyito (Cordoba)",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 45000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 7,
+      "businessId": 2,
+      "cityId": 14,
+      "hotelId": 36
+    },
+    {
+      "id": 15,
+      "name": "Rosario, una Ciudad Para Descubrir",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 60000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 1,
+      "businessId": 3,
+      "cityId": 15,
+      "hotelId": 38
+    },
+    {
+      "id": 16,
+      "name": "Dias de descanso en Cordoba Capital",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 50000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 2,
+      "businessId": 4,
+      "cityId": 16,
+      "hotelId": 2
+    },
+    {
+      "id": 18,
+      "name": "Mar de Ajo, descanso y diversion",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 70000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 4,
+      "businessId": 2,
+      "cityId": 17,
+      "hotelId": 41
+    },
+    {
+      "id": 19,
+      "name": "Paseo por Salta",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 80000,
+      "discount": 1,
+      "stock": 50,
+      "enabled": true,
+      "plattformId": 5,
+      "businessId": 3,
+      "cityId": 18,
+      "hotelId": 44
+    },
+    {
+      "id": 20,
+      "name": "Desconexion natural Ushuaia",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 80000,
+      "discount": 1,
+      "stock": 30,
+      "enabled": true,
+      "plattformId": 6,
+      "businessId": 4,
+      "cityId": 19,
+      "hotelId": 47
+    },
+    {
+      "id": 21,
+      "name": "Conoce Villa la Angostura",
+      "start_date": "2023-08-22",
+      "end_date": "2023-08-29",
+      "price": 70000,
+      "discount": 1,
+      "stock": 20,
+      "enabled": true,
+      "plattformId": 2,
+      "businessId": 2,
+      "cityId": 20,
+      "hotelId": 51
+    }
+  ],
+  "plattform": [
+    {
+      "id": 1,
+      "terminal": "Terminal de ómnibus del Bicentenar",
+      "address": "direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 2,
+      "terminal": "Terminal de ómnibus Córdoba",
+      "address": "oba;direcci",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 3,
+      "terminal": "Terminal de ómnibus Rosario",
+      "address": "o;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 4,
+      "terminal": "Terminal de ómnibus  Mendoza",
+      "address": "a;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 5,
+      "terminal": "Terminal de ómnibus",
+      "address": "5;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 6,
+      "terminal": "Terminal de ómnibus",
+      "address": "6;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 7,
+      "terminal": "Terminal de ómnibus",
+      "address": "7;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 8,
+      "terminal": "Terminal de ómnibus",
+      "address": "8;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 9,
+      "terminal": "Terminal de ómnibus",
+      "address": "9;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 10,
+      "terminal": "Terminal de ómnibus ",
+      "address": "0;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 11,
+      "terminal": "Terminal de ómnibus ",
+      "address": "1;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 12,
+      "terminal": "Terminal de ómnibus ",
+      "address": "2;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 13,
+      "terminal": "Terminal de ómnibus ",
+      "address": "3;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 14,
+      "terminal": "Terminal de ómnibus ",
+      "address": "4;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 15,
+      "terminal": "Terminal de ómnibus ",
+      "address": "5;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 16,
+      "terminal": "Terminal de ómnibus ",
+      "address": "6;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 17,
+      "terminal": "Terminal de ómnibus ",
+      "address": "7;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 18,
+      "terminal": "Terminal de ómnibus ",
+      "address": "8;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 19,
+      "terminal": "Terminal de ómnibus ",
+      "address": "9;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2}"
+    },
+    {
+      "id": 20,
+      "terminal": "Terminal de ómnibus ",
+      "address": "0;direccion",
+      "location": [-32.93985557969546, -60.6742718344208],
+      "FIELD5": "2"
+    }
+  ],
+  "user": [
+    {
+      "id": "22c8c5e5-d6dc-4e5c-965b-17b0e5027597",
+      "name": "agustin",
+      "surname": "gonzalez",
+      "mail": "gonzalez@hotmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "a28fbf1f-448e-4abf-9e85-ee22d57c8faa",
+      "name": "francisco",
+      "surname": "lopez",
+      "mail": "lopez@hotmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "d4af75df-5416-4a25-91f1-402d344f5e62",
+      "name": "mauro",
+      "surname": "garcia",
+      "mail": "garcia@hotmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "1f63f0f9-6827-48a1-ae2d-8bbd68b3ed20",
+      "name": "walter",
+      "surname": "marquez",
+      "mail": "marquez@hotmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "83be9f92-dcf2-452f-9504-0be29e60749d",
+      "name": "gustavo",
+      "surname": "ruiz",
+      "mail": "ruiz@hotmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "6e5a7f1b-571a-4d54-bd42-6438c5e4e5e8",
+      "name": "daniela",
+      "surname": "torres",
+      "mail": "torres@hotmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "9c6b58f2-9012-4e6a-b7d4-6dd7fbf60f13",
+      "name": "carllos",
+      "surname": "suarez",
+      "mail": "suarez@hotmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "5b8a5a6a-8a4d-4622-ae9f-b6f2f0063e5b",
+      "name": "pedro",
+      "surname": "castro",
+      "mail": "castro@hotmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "d62e2f91-4fcf-4b87-bf13-2c0c1e3d8d32",
+      "name": "nicolas",
+      "surname": "vazquez",
+      "mail": "vazquez@hotmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "078202a6-6b3f-4f23-9969-c8c746d2b0b9",
+      "name": "javier",
+      "surname": "acosta",
+      "mail": "acosta@gmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "7f35af58-8e1d-40e0-b8c2-d5df18914e27",
+      "name": "romina",
+      "surname": "diaz",
+      "mail": "diaz@gmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "3496cd6f-c0c3-4a56-bf24-30763e1d638e",
+      "name": "cristian",
+      "surname": "sanchez",
+      "mail": "sanchez@gmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "8a5bde1a-d3a9-4a4e-89e5-11d2c57f974d",
+      "name": "noelia",
+      "surname": "lazarte",
+      "mail": "lazarte@gmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "1e8fcd72-7996-4e4c-9c5c-7b6c8e3d6d3e",
+      "name": "martina",
+      "surname": "sosa",
+      "mail": "sosa@gmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "c825c7c9-5490-47d3-8f2b-408e294eeafa",
+      "name": "juan",
+      "surname": "romera",
+      "mail": "romera@gmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "7d74662c-832a-4b24-8e39-ef0ed33dcd11",
+      "name": "alejandro",
+      "surname": "martinez",
+      "mail": "martinez@gmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "ef056f07-7fbb-4e48-8e78-2db5a4e5566a",
+      "name": "ramiro",
+      "surname": "ayala",
+      "mail": "ayala@gmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "4f45c058-b593-4e57-8d1f-996e7e90a6fb",
+      "name": "maria",
+      "surname": "bazan",
+      "mail": "bazan@gmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "9e1d11c4-63a4-4fe1-8a2a-b6931df4e0c5",
+      "name": "juan",
+      "surname": "palomeque",
+      "mail": "palomeque@gmail.com",
+      "password": 123456,
+      "typeUserId": 2
+    },
+    {
+      "id": "0c3e82b4-1dc6-4e96-aa1c-6620e3bcac50",
+      "name": "maria",
+      "surname": "otero",
+      "mail": "otero@gmail.com",
+      "password": 123456,
+      "typeUserId": 1
+    }
+  ],
+  "statusCart": [
+    {
+      "id": 1,
+      "description": "pending"
+    },
+    {
+      "id": 2,
+      "description": "bought"
+    }
+  ],
+  "Cart": [
+    {
+      "id": 1,
+      "userId": "a28fbf1f-448e-4abf-9e85-ee22d57c8faa",
+      "statusCartId": 1
+    },
+    {
+      "id": 2,
+      "userId": "22c8c5e5-d6dc-4e5c-965b-17b0e5027597",
+      "statusCartId": 2
+    }
+  ],
+  "cartDetails": [
+    {
+      "id": 1,
+      "numberPeople": 2,
+      "isQualified": true,
+      "packageId": 1,
+      "cartId": 1
+    },
+    {
+      "id": 2,
+      "numberPeople": 3,
+      "isQualified": false,
+      "packageId": 2,
+      "cartId": 2
+    }
+  ]
+}

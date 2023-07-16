@@ -3,8 +3,7 @@ const { Invoice,Booking} = require("../db");
 
 const getInvoices= async () => {
     try {
-      let invoices = await Invoice.findAll({});
-      
+      let invoices = await Invoice.findAll({});      
       return invoices;
     } catch (err) {
       return {
@@ -20,8 +19,7 @@ const getInvoices= async () => {
           model: Booking,
        
         },
-      });
-      
+      });      
       return invoice;
     } catch (err) {
       return {
@@ -34,10 +32,8 @@ const getInvoices= async () => {
 
 
   const createInvoice = async (bookingId,confirmation) => {
-    try {
-    
-      const fecha=Date(Date.now());
-     
+    try {    
+      const fecha=Date(Date.now());     
       const invoice=await Invoice.create(
         {
         dateTime: fecha,
@@ -56,8 +52,7 @@ const getInvoices= async () => {
     }
   };
   
-  const deleteInvoiceById = async (id) => {
-  
+  const deleteInvoiceById = async (id) => {  
     try {
         const invoice = await Invoice.destroy({
           where: { id: id },

@@ -140,10 +140,8 @@ const addPeoplecartDetailById= async (
  const deletePeoplecartDetailById= async (
   id,numberPeople
  ) => {
-   try {
-    
+   try {    
      numberPeople=Number(numberPeople)-1;
-     console.log("NumberP:",numberPeople)
      const a = await CartDetail.update(
        {
          numberPeople:numberPeople 
