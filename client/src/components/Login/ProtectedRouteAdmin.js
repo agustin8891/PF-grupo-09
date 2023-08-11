@@ -12,7 +12,7 @@ export function ProtectedRoutedAdmin({ children }) {
   const auth = getAuth();
   const user = auth.currentUser;
  
-  const { loading } = useAuth();
+/*   const { loading } = useAuth(); */
   const firestore = getFirestore(app);
   
   const getRol= async(uid) => {
@@ -34,7 +34,7 @@ getRol(user?.uid)
     return <Login />;
   }
 
-  if (loading) return <h1>Loading</h1>;
+/*   if (loading) return <h1>Loading</h1>; */
 
 console.log(roles)
   if (roles !=='admin') {

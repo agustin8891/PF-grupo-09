@@ -6,7 +6,6 @@ const router = Router()
 
 router.get("/", async(req, res) => {
     try {
-
         const activities = await getActivities()
             // console.log(activities) ver las actividades de una ciudad
         return res.status(200).json(activities)
@@ -73,9 +72,5 @@ router.put("/:id", async(req, res) => {
         return res.status(400).json(error);
     }
 });
-
-
-
-
 
 module.exports = router;

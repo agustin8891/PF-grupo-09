@@ -21,6 +21,11 @@ import { getAuth } from "firebase/auth";
 import Navbar from "../Navbar";
 import swal from "sweetalert";
 import { Link } from "react-router-dom";
+import { postBuyMp } from "../../redux/actions/postBuyMp";
+
+
+
+
 
 export default function ShoppingCart({ userlog }) {
   const [pulsado, setPulsado] = useState(false);
@@ -32,7 +37,7 @@ export default function ShoppingCart({ userlog }) {
 
   const cart = useSelector((state) => state.rootReducer.cart);
 
-  console.log(cart);
+
 
   const dispatch = useDispatch();
   console.log(packages);
@@ -211,6 +216,12 @@ export default function ShoppingCart({ userlog }) {
     return flag;
   };
 
+  async function buyMp(){
+    dispatch(postBuyMp(cart))
+  }
+
+console.log("cart", cart)
+
   return (
     <div>
       <Navbar userlog={userlog} />
@@ -270,7 +281,7 @@ export default function ShoppingCart({ userlog }) {
                 <button
                   type="button"
                   className="btn btn-warning btn-block btn-lg ml-2 pay-button bb"
-                  onClick={() => setPulsado(!pulsado)}
+                  onClick={() => buyMp()}
                 >
                   Comprar
                 </button>
@@ -291,7 +302,7 @@ export default function ShoppingCart({ userlog }) {
               )}
             </div>
 
-            {pulsado ? <Pasarela total={total} cart={cart} /> : null}
+            {/* {pulsado ? <Pasarela total={total} cart={cart} /> : null} */}
           </div>
         </div>
       </div>

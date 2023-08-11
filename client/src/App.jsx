@@ -33,9 +33,9 @@ import { loadDb } from './redux/actions/loadDb';
 function App() {
   const dispatch=useDispatch()
   
-  useEffect(() => {
-    dispatch(loadDb())
-  }, [])
+  // useEffect(() => {
+  //   dispatch(loadDb())
+  // }, [])
   const [userlog, setUser] = React.useState(null);
 
   async function getRol(uid) {

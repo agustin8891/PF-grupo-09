@@ -20,6 +20,7 @@ const Shopping = require("./shoppingRouter");
 const Stock = require("./stockRouter");
 const LoadDb = require("./loadDb");
 const FirstRoute = require("./firstRoute");
+const MercadoPagoRoute = require("./mercadoPagoRoutes");
 
 const router = Router();
 
@@ -44,6 +45,7 @@ router.use("/admin", Admin);
 router.use("/shopping", Shopping);
 router.use("/stock", Stock);
 router.use("/loaddb", LoadDb);
+router.use("/mercadopago", MercadoPagoRoute);
 router.use("/", FirstRoute);
 
 

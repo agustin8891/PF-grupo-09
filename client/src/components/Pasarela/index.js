@@ -18,7 +18,7 @@ import axios from "axios";
 import swal from "sweetalert";
 import { DB_HEROKU } from "../../redux/actions/actionTypes";
 const stripePromise = loadStripe(
-  "pk_test_51LTBDuKIottmlf7Xbtn9K29aMc0spCuzel3dOw1hX5hb5KLxKfAIWhGjh1ACx5ux3j1VRqigkN4yPNontWKFBYt200falMP3nU"
+  "pk_test_51NUdd2I2MydWmZVZVyHnjigWgMmY90EheXquVvwSaT471i3My3Xu5xeFdxaLcEcRPDYyykZCplg9pVnLwLnjGLvb00TQtjBkXz"
 );
 
 const CheckoutForm = ({ total, cart }) => {
@@ -51,8 +51,22 @@ const CheckoutForm = ({ total, cart }) => {
       card: elements.getElement(CardElement),
     });
 
-     console.log("error", error) 
-    if (!error) {
+    console.log("paymentMethod", paymentMethod);
+
+    let pay = {
+      id:paymentMethod.id,
+      amount: total * 100,
+      card: paymentMethod.card.brand,
+      idCart: cart[0].id,
+      idUser: cart[0].userId,
+      userFullName: `${cart[0].user.name} ${cart[0].user.surname}`,
+      userMail: cart[0].user.mail,
+      description: description,
+    };
+    let resBack = await axios.post(`${DB_HEROKU}/payment`, pay);
+    resBack = resBack.data;
+    console.log(resBack);
+    /*     if (!error) {
       console.log("paymentMethod", paymentMethod);
       const { id, card } = paymentMethod;
       try {
@@ -112,7 +126,7 @@ const CheckoutForm = ({ total, cart }) => {
       });
       elements.getElement(CardElement).clear();
       setLoading(false);
-    }
+    } */
   };
 
   console.log(!stripe || loading);

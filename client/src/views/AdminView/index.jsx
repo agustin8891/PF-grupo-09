@@ -84,11 +84,11 @@ function Admin() {
     setAdd((add) => !add);
   };
 
-  const { logout } = useAuth();
+  /* const { logout } = useAuth(); */
 
   const handleLogout = async () => {
     try {
-      await logout();
+      /* await logout(); */
     } catch (error) {
       console.error(error.message);
     }
