@@ -35,11 +35,11 @@ router.put("/", async (req, res) => {
 });
 
 
-// router.post("/webhook", async (req, res) => {
-//   const payment = req.query;
-//   const resultpayment = await receiveWebhook(payment);
-//   res.sendStatus(204);
-// });
+router.post("/webhook", async (req, res) => {
+  const payment = req.query;
+  const resultpayment = await receiveWebhook(payment);
+  res.sendStatus(204);
+});
 
 
 

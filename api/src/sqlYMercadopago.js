@@ -11,7 +11,7 @@ if (process.env.DB_DESARROLLO) {
 
   DB_HOST_NAME = "localhost";
   DB_PASSWORD = "password";
-  NOTIFICATION_URL_MP="https://62b7-186-13-96-240.ngrok-free.app/mercadopago/webhook"
+  NOTIFICATION_URL_MP="https://0054-2803-9800-98c4-6ec1-15be-5e87-9eae-5557.ngrok-free.app/mercadopago/webhook"
   SUCCESS_MP="http://localhost:3001/success"
   PENDING_MP="http://localhost:3001/pending"
   FAILURE_MP="http://localhost:3001/failure"
