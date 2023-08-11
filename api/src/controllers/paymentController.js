@@ -27,17 +27,13 @@ const postPayment = async (cart) => {
       arrayItems.push(objectItem);
     }
   }
-
   mercadopage.configure({
     access_token: MERCADOPAGO_API_KEY,
   });
 
   if (arrayItems.length > 0) {
-    console.log("result", cart[0]?.id);
-    console.log("result", cart[0]?.user.mail);
     const idCart = cart[0]?.id;
     const mail = cart[0]?.user.mail;
-
     result = await mercadopage.preferences.create({
       items: arrayItems,
       back_urls: {
@@ -49,7 +45,6 @@ const postPayment = async (cart) => {
       metadata: { idCart: idCart, mail: mail },
     });
   }
-  console.log(result?.body)
   return result?.body;
 };
 
@@ -78,8 +73,6 @@ const updateCartPayment = async (id) => {
 const receiveWebhook = async (payment) => {
   if (payment.type === "payment") {
     const data = await mercadopage.payment.findById(payment["data.id"]);
-    console.log("(data.body?.metadata?.id_cart);", data.body?.metadata?.id_cart)
-    console.log("(data.body?.metadata?.mail);", data.body?.metadata?.mail);
     const cartUpdate = updateCartPayment(data.body?.metadata?.id_cart);
     const cartNew = await createCart(data.body?.metadata?.mail);
   }

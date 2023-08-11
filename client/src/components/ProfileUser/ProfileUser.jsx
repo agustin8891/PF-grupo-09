@@ -11,6 +11,8 @@ import { getAuth } from 'firebase/auth';
 export default function ProfileUser({ userlog }) {
   const dispatch = useDispatch()
   const { shopping } = useSelector(state => state.rootReducer)
+
+  console.log("shopping", shopping)
   // React.useEffect(
   //   () => { dispatch(loadShopping(userlog?.email)) }, [dispatch]
   // )
@@ -39,7 +41,6 @@ export default function ProfileUser({ userlog }) {
   const [businessId, setBusinessId] = useState('');
   const [hotelId, setHotelId] = useState('');
   const [userId, setUserId] = useState('');
-  console.log(userId)
 
 
   

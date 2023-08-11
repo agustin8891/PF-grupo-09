@@ -110,9 +110,10 @@ const clearCart=async (id) => {
 const updateCartById = async (
  id,userId,statusCartId
 ) => {
+
   try {
     if (!id||userId||!statusCartId) return "All fields are required";
-    
+
    
     const cartUpdate = await Cart.update(
       {
@@ -135,9 +136,10 @@ const updateCartById = async (
 const finishCartById = async (
   id
  ) => {
+
    try {
      if (!id) return "All fields are required";
-     
+     console.log("llego hasta aca controladooooooor", id)
     const statusCartId=3
      const cartUpdate = await Cart.update(
        {
@@ -145,6 +147,7 @@ const finishCartById = async (
        },
        { where: { id: id } }
      );
+     console.log("cartUpdate", cartUpdate)
      if (cartUpdate[0]) {
        return { msg: "The cart has been update successfully", valor: true };
      }

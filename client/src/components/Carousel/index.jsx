@@ -1,60 +1,60 @@
-import React, { useState } from 'react'
-import { DataImage } from './DataImages';
-import './carousel.css'
+import React from "react";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import "./carousel.css"; // Importa tus estilos personalizados
 import { useSelector } from "react-redux";
+import { format } from "date-fns"; // Importa la función de formateo
 
-const Carousel = () => {
+const MyCarousel = () => {
+  const packages = useSelector((state) => state.rootReducer.packages);
+  const currentDate = new Date();
+  let arrayCarousel = packages.filter(
+    (el) => new Date(el.start_date) > currentDate
+  );
+  arrayCarousel = arrayCarousel.slice(0, 5);
 
-  const { packages } = useSelector((state) => state.rootReducer);
-  const [current, setCurrent] = useState(0);
-  const length = DataImage.length;
-  const [autoPlay, setAutoPlay] = useState(true);
-  let timeOut = null;
-  let array=[]
-
-    //los paquetes ya están ordenados por fecha en packages
-  for (let i=0; i<5; i++ ) {
-    array.push(packages[i])
-  }
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+  const formatDateToDdMm = (isoDate) => {
+    const date = new Date(isoDate);
+    return format(date, "dd/MM");
   };
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
-  React.useEffect(() => { timeOut = autoPlay && setTimeout(() => { nextSlide(); }, 3000) })
-  if (!Array.isArray(DataImage) || DataImage.length <= 0) {
-    return null;
-  }
-
 
   return (
-    <section className='slider' >
- 
-
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-  {array.map((e)=>{ return ( <div class="carousel-item active">
-  {<img src={e?.city.image} class="d-block w-100" alt="..."/>}
-</div>)
- })
-    }
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-
-    </section>
+    <OwlCarousel
+      className="owl-theme custom-carousel"
+      items={1}
+      loop={true}
+      autoplay={true}
+      autoplayTimeout={3000}
+      autoplayHoverPause={true}
+    >
+      {arrayCarousel.map((el, index) => {
+        const formattedDate = formatDateToDdMm(el.start_date);
+        return (
+          <div key={index} className="containerImgCarousel">
+            <div className="image-overlay">
+              <h2 className="overlay-text">{el.name}</h2>
+              {/*               <h2 className="text-date">{el.name}</h2>
+              <h2 className="text-hotel">{el.hotel?.name}</h2> */}
+              <div className="container-texts d-flex flex-column">
+                <h2 className="text-date ms-5 mb-5">
+                  <strong>Fecha de salida: {formattedDate}</strong>
+                </h2>
+                <h2 className="text-date ms-5">
+                  <strong>Hotel: {el.hotel?.name}</strong>
+                </h2>
+              </div>
+            </div>
+            <img
+              className="imgCarousel"
+              src={el.city?.image}
+              alt={`Slide ${index + 1}`}
+            />
+          </div>
+        );
+      })}
+    </OwlCarousel>
   );
-}
+};
 
-export default Carousel
+export default MyCarousel;

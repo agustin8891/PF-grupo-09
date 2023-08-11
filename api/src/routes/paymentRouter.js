@@ -6,8 +6,6 @@ const {
 } = require("../controllers/paymentController");
 const { createCart } = require("../controllers/cartControllers");
 
-
-
 router.post("/", async (req, res) => {
   const cart = req.body;
   try {
@@ -34,16 +32,12 @@ router.put("/", async (req, res) => {
   }
 });
 
-
 router.post("/webhook", async (req, res) => {
   const payment = req.query;
   const resultpayment = await receiveWebhook(payment);
   res.sendStatus(204);
 });
 
-
-
-
-// router.get("/success", (req, res) => res.send("Success"));
+router.get("/success", (req, res) => res.send("Success"));
 
 module.exports = router;
