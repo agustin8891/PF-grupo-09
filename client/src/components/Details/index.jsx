@@ -21,9 +21,7 @@ export default function Details({ userlog }) {
   const { packages, showPackages } = useSelector((state) => state.rootReducer);
   const { id } = useParams();
 
-  
   const users = useSelector((state) => state.rootReducer.users);
-
 
   const packageDetail = useSelector((state) => state.rootReducer.detail);
   const cart = useSelector((state) => state.rootReducer.cart);
@@ -187,9 +185,6 @@ if(imagen){
 }
  */
 
-  console.log("CART:", cart);
-  console.log(new Date(packageDetail.start_date).toString());
-
   return (
     <div class="container ">
       <div class="card mb-3 card-detalles-details">
@@ -300,17 +295,16 @@ if(imagen){
           </h5>
           <MapView packageDetail={packageDetail} />
           <div class=" card-hotel-detalles">
-            <div class="mr-1">
+            <div class="mr-1 hotelImgContainer">
               <img
-                class="rounded"
+                class="rounded imgHotelDetail"
                 src={packageDetail.hotel?.urlImage?.join(",")}
-                width="50%"
                 /*  height="80" */
               />
             </div>
 
             <div class="d-flex flex-column align-items-center product-details info-cart">
-              <h5 class="font-weight-bold">{packageDetail.hotel?.name}</h5>
+              <p class="textHotel">{packageDetail.hotel?.name}</p>
               <div class="d-flex flex-column align-items-start product-desc">
                 <div class="sizese mr-1"></div>
 
@@ -327,36 +321,44 @@ if(imagen){
         </div>
 
         <div className="actividades">
-          <div>
-            <h5>Actividades Incluidas</h5>
-          </div>     <div className="actividades-incluidas">
-   {packageDetail.activities?.map(e => {
-    return (<>
-             <div class="act">
-              <div class="mr-1">
-                <img class="rounded" src={e.image} width="200" height="150" />
-              </div>
+          <h5>Actividades Incluidas</h5>
+          <div className="container">
+            <div className="row">
+              {packageDetail.activities?.map((e) => {
+                return (
+                  <div className="col-12 col-md-6 col-lg-4">
+                    <div class="act">
+                      <div class="mr-1">
+                        <img
+                          class="rounded"
+                          src={e.image}
+                          width="200"
+                          height="150"
+                        />
+                      </div>
 
-              <div class="">
-                <h6 class="font-weight-bold">{e.name}</h6>
-                <div class="d-flex flex-column align-items-start product-desc">
-                  <div class="sizese mr-1"></div>
+                      <div class="">
+                        <h6 class="font-weight-bold">{e.name}</h6>
+                        <div class="d-flex flex-column align-items-start product-desc">
+                          <div class="sizese mr-1"></div>
 
-                  <div class="colores">
-                    <span class="text-grey b "> </span>{" "}
-                    <span class="font-weight-bold b"></span>
+                          <div class="colores">
+                            <span class="text-grey b "> </span>{" "}
+                            <span class="font-weight-bold b"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center qty"></div>
+                      <div></div>
+                      <div class="d-flex align-items-center"></div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="d-flex flex-row align-items-center qty"></div>
-              <div></div>
-              <div class="d-flex align-items-center"></div>
+                );
+              })}
             </div>
-    
-    </>)
-   })}
+          </div>
+        </div>
       </div>
-     </div></div>
       <div className="detalles-div">
         {!packageDetail.hotel?.reviewHotels?.length &&
         !packageDetail.business?.reviewBusinesses?.length &&

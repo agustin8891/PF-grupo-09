@@ -15,13 +15,9 @@ import Loaderpag from "../Loaderpag/Loaderpag";
 export default function HomeBody() {
   const { packages, showPackages } = useSelector((state) => state.rootReducer);
   const dispatch = useDispatch();
-
-  console.log("home", packages);
-
   const paquetesDisponibles = packages?.filter((e) => {
     return e.stock > 0;
   });
-  console.log(paquetesDisponibles);
 
   const auth = getAuth();
   const user = auth.currentUser;
@@ -51,7 +47,7 @@ export default function HomeBody() {
     <>
       <div class="container cont-card">
         <h2 className="title-card-home">
-          Elegi un paquete para comenzar tu aventura
+          Elegí un paquete para comenzar tu aventura
         </h2>
         <div class="row g-3">
           {showPackages.length ? (

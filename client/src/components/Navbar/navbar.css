@@ -59,6 +59,7 @@
     transform: scale(1.05);
     transition: transform .2s ease-in-out;
     border-radius: 3px;
+    padding-top:0.5rem
 }
 .navbar{
     background-color:#004AAD;
@@ -122,6 +123,7 @@
 }
 .carrito{
     color: antiquewhite;
+    margin-top:1rem;
 }
 .carrito:hover{
     color: #FFDE59;

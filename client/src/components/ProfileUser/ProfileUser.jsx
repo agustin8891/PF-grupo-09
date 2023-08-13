@@ -198,14 +198,14 @@ export default function ProfileUser({ userlog }) {
           </div>
           <div className='display-5'>Viajes Finalizados</div>
     
-          <div className='container-userProfile'>
+          <div className='container-userProfile row'>
             {/* <img src="img.jpg" alt="John" style={{ width: "100%" }} /> */}
             
             
             {shopping.length
               ? shopping.filter(cart=>cart.statusCartId==3).map((data) =>
                   data?.cartDetails.map((pack) => (
-                    <div>
+                    <div className="col-12">
 
                     <div className="cardUserPanel">
                       <p className="cardUserTitle">{pack.package?.name}</p>

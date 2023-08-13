@@ -30,3 +30,18 @@
     font-family: 'Montserrat';
     font-weight: bold;
 } */
+
+.container-cards {
+  padding: 50px;
+}
+
+.cardservices {
+  padding: 0px 0px 350px 0px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 540px) {
+  .container-cards {
+    padding: 100px;
+  }
+}

@@ -56,27 +56,29 @@ export default function Services({ userlog }) {
   return (
     <>
       <Navbar setCurrentPage={setCurrentPage} userlog={userlog} />
-      <div className="container-services">
-        <div className="searchContainer">
+      {/*       <div className="container-fluid"> */}
+      {/* <div className="container-services container-fluid m-0 p-0"> */}
+      <div className="container-fluid m-0 p-0">
+        <div className="row">
           <SearchAndFilters setCurrentPage={setCurrentPage} />
-        </div>
 
-        <div className="cardConatinerServices">
-          <div>
-            <Productos currentPackages={currentPackages} />
-          </div>
-          <div className="paginadoservices">
-            <Paginado
-              currentPage={currentPage}
-              packagesPerPage={packagesPerPage}
-              packages={packages.length}
-              paginado={paginado}
-            />
+          <div className="cardConatinerServices col-12 col-lg-8 col-xl-6">
+            <div >
+              <Productos currentPackages={currentPackages} />
+            </div>
+            <div className="paginadoservices">
+              <Paginado
+                currentPage={currentPage}
+                packagesPerPage={packagesPerPage}
+                packages={packages.length}
+                paginado={paginado}
+              />
+            </div>
           </div>
         </div>
+        {/*         </div> */}
       </div>
-
-      <div className="fotservices">
+      <div className="footerDiv">
         <Footer />
       </div>
     </>
